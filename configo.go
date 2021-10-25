@@ -31,7 +31,7 @@ func (c *Configo) Has(key interface{}) bool {
 }
 
 func (c *Configo) Delete(key interface{}) {
-	c.Config[key] = nil
+	delete(c.Config, key)
 }
 
 func (c *Configo) Size() int {

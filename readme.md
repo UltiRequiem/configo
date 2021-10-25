@@ -2,7 +2,7 @@
 
 [![Go Reference](https://pkg.go.dev/badge/github.com/UltiRequiem/configo.svg)](https://pkg.go.dev/github.com/UltiRequiem/configo)
 
-Dead Simple Config Management.
+Dead Simple Config Management, easily load and persist config without having to think about where and how.
 
 ## Install
 
@@ -36,10 +36,30 @@ func main() {
 	config.Delete("awesome")
 
 	fmt.Println(config.Get("awesome")) //=> nil
+
+	fmt.Println(config.Size())
 }
 ```
 
 ## API
+
+### `NewConfig`
+
+### `Configo.Get`
+
+### `Configo.GetAll`
+
+### `Configo.Set`
+
+### `Configo.SetAll`
+
+### `Configo.Has`
+
+### `Configo.Size`
+
+### `Configo.Clear`
+
+### `Configo.Path`
 
 ## Licence
 

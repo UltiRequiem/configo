@@ -21,4 +21,6 @@ func main() {
 	config.Delete("awesome")
 
 	fmt.Println(config.Get("awesome")) //=> nil
+
+	fmt.Println(config.Size())
 }
