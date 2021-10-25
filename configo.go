@@ -23,6 +23,17 @@ func (c *Configo) SetAll(config Config) {
 	c.Config = config
 }
 
+func (c *Configo) Has(key string) bool {
+	if _, ok := c.Config[key]; ok {
+		return true
+	}
+	return false
+}
+
+func (c *Configo) Size() int {
+	return len(c.Config)
+}
+
 func (c *Configo) Clear() {
 	c.Config = make(Config)
 }

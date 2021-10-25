@@ -1,6 +1,6 @@
 # Configo
 
-Dead Simple Config Management on Go.
+Dead Simple Config Management.
 
 ## Licence
 
