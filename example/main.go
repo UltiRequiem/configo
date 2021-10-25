@@ -14,5 +14,11 @@ func main() {
 		log.Fatal(err)
 	}
 
-	fmt.Println(config)
+	config.Set("awesome", true)
+
+	fmt.Println(config.Get("awesome")) //=> true
+
+	config.Delete("awesome")
+
+	fmt.Println(config.Get("awesome")) //=> nil
 }
