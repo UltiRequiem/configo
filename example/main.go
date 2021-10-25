@@ -14,6 +14,9 @@ func main() {
 		log.Fatal(err)
 	}
 
+	// Only if you want to persist values
+	defer config.Save()
+
 	config.Set("awesome", 777)
 
 	fmt.Println(config.Get("awesome")) //=> 777
@@ -29,11 +32,4 @@ func main() {
 	config.Set("foo", "bar")
 
 	fmt.Println(config.Size()) //=> 1
-
-	// If you want persistence of data
-	errorSaving := config.Save()
-
-	if errorSaving != nil {
-		log.Fatal(errorSaving)
-	}
 }
