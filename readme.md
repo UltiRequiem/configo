@@ -1,6 +1,6 @@
 # Configo [![Go Reference](https://pkg.go.dev/badge/github.com/UltiRequiem/configo.svg)](https://pkg.go.dev/github.com/UltiRequiem/configo) [![CI](https://github.com/UltiRequiem/configo/workflows/CI/badge.svg)](https://github.com/UltiRequiem/configo/actions/workflows/ci.yaml)
 
-Dead Simple Config Management, easily load and persist config without having to think about where and how.
+Dead Simple Config Management, load and persist config without having to think about where and how.
 
 ## Install
 
@@ -73,23 +73,27 @@ func main() {
 
 ## API
 
-### `NewConfig`
+### [`NewConfig`](https://github.com/UltiRequiem/configo/blob/main/root.go#L9)
 
-### `Configo.Get`
+### [`Configo.Get`](https://github.com/UltiRequiem/configo/blob/main/configo.go#L15)
 
-### `Configo.GetAll`
+### [`Configo.GetAll`](https://github.com/UltiRequiem/configo/blob/main/configo.go#L19)
 
-### `Configo.Set`
+### [`Configo.Set`](https://github.com/UltiRequiem/configo/blob/main/configo.go#L23)
 
-### `Configo.SetAll`
+### [`Configo.SetAll`](https://github.com/UltiRequiem/configo/blob/main/configo.go#L27)
 
-### `Configo.Has`
+### [`Configo.Has`](https://github.com/UltiRequiem/configo/blob/main/configo.go#L31)
 
-### `Configo.Size`
+### [`Configo.Delete`](https://github.com/UltiRequiem/configo/blob/main/configo.go#L39)
 
-### `Configo.Clear`
+### [`Configo.Size`](https://github.com/UltiRequiem/configo/blob/main/configo.go#L43)
 
-### `Configo.Path`
+### [`Configo.Clear`](https://github.com/UltiRequiem/configo/blob/main/configo.go#L47)
+
+### [`Configo.Path`](https://github.com/UltiRequiem/configo/blob/main/configo.go#L51)
+
+### [`Configo.Save`](https://github.com/UltiRequiem/configo/blob/main/configo.go#L55)
 
 ## Licence
 

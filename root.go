@@ -1,4 +1,4 @@
-// Dead Simple Config Management, easily load and persist config without having to think about where and how.
+// Dead Simple Config Management, load and persist config without having to think about where and how.
 package configo
 
 import (
