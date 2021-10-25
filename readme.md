@@ -29,15 +29,17 @@ func main() {
 		log.Fatal(err)
 	}
 
-	config.Set("awesome", true)
+	config.Set("awesome", 777)
 
-	fmt.Println(config.Get("awesome")) //=> true
+	fmt.Println(config.Get("awesome")) //=> 777
+
+	fmt.Println(config.Has("awesome")) //=> true
 
 	config.Delete("awesome")
 
 	fmt.Println(config.Get("awesome")) //=> nil
 
-	fmt.Println(config.Size())
+	fmt.Println(config.Size()) //=> 0
 }
 ```
 
