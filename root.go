@@ -6,6 +6,7 @@ import (
 	"os"
 )
 
+// Returns a new instance of Configo
 func NewConfig(name string) (*Configo, error) {
 	configFilePath := configFile(name)
 

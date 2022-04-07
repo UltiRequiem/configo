@@ -10,6 +10,6 @@ func TestConfigFile(t *testing.T) {
 	toTestConfigurationFile := configFile("example")
 
 	if !(configurationFile == toTestConfigurationFile) {
-		t.Fatalf("Exepected %s but got %s", configurationFile, toTestConfigurationFile)
+		t.Fatalf("Expected %s but got %s", configurationFile, toTestConfigurationFile)
 	}
 }
